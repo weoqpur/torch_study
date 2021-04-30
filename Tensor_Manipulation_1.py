@@ -32,3 +32,4 @@ print(ft.view([-1, 3]).shape)
 
 print(ft.view([-1, 1, 3])) # ? x 1 x 3의 크기로 반환
 print(ft.view([-1, 1, 3]).shape) # -1, 1 : 요소가 1인 차원을 추 4x1x3
+
