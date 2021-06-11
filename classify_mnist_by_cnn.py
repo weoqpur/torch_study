@@ -65,6 +65,7 @@ class CNN(torch.nn.Module):
         torch.nn.init.xavier_uniform_(self.fc.weight)
 
     def forward(self, x):
+        # 레이어를 통과시켜주는 작업
         out = self.layer1(x)
         out = self.layer2(out)
         out = out.view(out.size(0), -1) # 전결합층을 위해서 Flatten
